@@ -1,0 +1,187 @@
+.proveedores-container {
+  margin-left: 240px;
+  margin-top: 60px;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  max-width: calc(100% - 240px);
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.proveedores-container h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-top: 60px;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#btn-add-proveedor {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-add-proveedor:hover {
+  background-color: #45a049;
+}
+
+#form-proveedor-container {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form-proveedor-container form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.7rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#form-proveedor-container form button {
+  background-color: #007BFF;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#form-proveedor-container form button:hover {
+  background-color: #0056b3;
+}
+
+#proveedores-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#proveedores-table th,
+#proveedores-table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#proveedores-table th {
+  background-color: #007BFF;
+  color: white;
+}
+
+#proveedores-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#proveedores-table tr:hover {
+  background-color: #e8f4ff;
+}
+
+.btn-edit,
+.btn-delete {
+  background-color: #ffc107;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* DARK MODE */
+body.dark-theme .proveedores-container {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme .proveedores-container h2 {
+  color: #90caf9;
+}
+
+body.dark-theme #form-proveedor-container {
+  background-color: #2a2a2a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme #form-proveedor-container form input {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #eee;
+}
+
+body.dark-theme #form-proveedor-container form button {
+  background-color: #1976d2;
+}
+
+body.dark-theme #form-proveedor-container form button:hover {
+  background-color: #115293;
+}
+
+body.dark-theme #proveedores-table {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark-theme #proveedores-table th {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+body.dark-theme #proveedores-table td {
+  border-color: #444;
+}
+
+body.dark-theme #proveedores-table tr:nth-child(even) {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme #proveedores-table tr:hover {
+  background-color: #2e3b55;
+}
+
+body.dark-theme .btn-edit {
+  background-color: #fbc02d;
+  color: #000;
+}
+
+body.dark-theme .btn-delete {
+  background-color: #ef5350;
+}
+
+body.dark-theme .btn-edit:hover {
+  background-color: #f9a825;
+}
+
+body.dark-theme .btn-delete:hover {
+  background-color: #c62828;
+}

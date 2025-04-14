@@ -1,0 +1,133 @@
+
+.config-container {
+    max-width: 700px;
+    margin: 3rem auto;
+    margin-top: 100px;
+    padding: 2rem 3rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .config-container h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 1rem;
+  }
+  
+  .config-item {
+    margin-bottom: 2rem;
+  }
+  
+  .config-item label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 0.6rem;
+  }
+  
+  .config-item select,
+  .config-item input[type="text"],
+  .config-item input[type="date"],
+  .config-item input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .config-item select:focus,
+  .config-item input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+  }
+  
+  .config-item input[type="checkbox"] {
+    transform: scale(1.4);
+    margin-left: 0.5rem;
+    accent-color: #3498db;
+  }
+  
+  #guardar-nombre,
+  #reset-datos {
+    margin-top: 0.8rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  #guardar-nombre {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  #guardar-nombre:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+  }
+  
+  #reset-datos {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  #reset-datos:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+ 
+body.dark-theme {
+  background-color: #121212; 
+  color: #f0f0f0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* DARK MODE */
+.config-container.dark {
+  background: #1e1e2f;
+  color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.config-container.dark h2 {
+  color: #ffffff;
+  border-bottom: 2px solid #444;
+}
+
+.config-container.dark .config-item label {
+  color: #dddddd;
+}
+
+.config-container.dark input,
+.config-container.dark select {
+  background-color: #2b2b3c;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+.config-container.dark input:focus,
+.config-container.dark select:focus {
+  border-color: #8ab4f8;
+  box-shadow: 0 0 0 2px rgba(138, 180, 248, 0.3);
+}
+
+.config-container.dark #guardar-nombre {
+  background-color: #27ae60;
+}
+
+.config-container.dark #reset-datos {
+  background-color: #c0392b;
+}

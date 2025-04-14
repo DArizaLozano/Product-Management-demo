@@ -1,0 +1,234 @@
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.productos-container {
+  margin-left: 240px;
+  margin-top: 60px;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  max-width: calc(100% - 240px);
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.productos-container.dark {
+  background-color: #1e1e1e;
+}
+
+.productos-container h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-top: 60px;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.productos-container.dark h2 {
+  color: #9ec1ff;
+}
+
+#btn-add-product {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-add-product:hover {
+  background-color: #45a049;
+}
+
+#form-product-container {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dark #form-product-container {
+  background-color: #2b2b2b;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+#form-product-container form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.7rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.dark #form-product-container form input {
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+  color: white;
+}
+
+#form-product-container form button {
+  background-color: #007BFF;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#form-product-container form button:hover {
+  background-color: #0056b3;
+}
+
+#products-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dark #products-table {
+  background-color: #2c2c2c;
+  color: white;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+#products-table th,
+#products-table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dark #products-table th,
+.dark #products-table td {
+  border-bottom: 1px solid #444;
+}
+
+#products-table th {
+  background-color: #007BFF;
+  color: white;
+}
+
+.dark #products-table th {
+  background-color: #004a99;
+}
+
+#products-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.dark #products-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+#products-table tr:hover {
+  background-color: #e8f4ff;
+}
+
+.dark #products-table tr:hover {
+  background-color: #333;
+}
+
+.btn-edit,
+.btn-delete {
+  background-color: #ffc107;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.dark .btn-edit {
+  color: black;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+.categoria-select-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.categoria-select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+.dark .categoria-select {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+.precio-promedio-container {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #eef6f9;
+  border: 1px solid #d0e5eb;
+  border-radius: 10px;
+}
+
+.dark .precio-promedio-container {
+  background-color: #2e3c45;
+  border-color: #475d6c;
+}
+
+.titulo-precio-promedio {
+  font-size: 18px;
+  color: #31708f;
+  margin-bottom: 10px;
+}
+
+.dark .titulo-precio-promedio {
+  color: #a7dfff;
+}
+
+.lista-precios-promedio {
+  list-style: none;
+  padding-left: 0;
+}
+
+.item-precio-promedio {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.dark .item-precio-promedio {
+  background-color: #355d36;
+  color: #c9ffc4;
+}

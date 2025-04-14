@@ -1,0 +1,169 @@
+.ventas-container {
+  margin-left: 240px; /* Width of the sidebar to make room */
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 100px;
+  width: calc(100% - 240px); /* Adjusting the size to the right of the sidebar */
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.ventas-container h2,
+.ventas-container h3 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+#venta-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#venta-form select,
+#venta-form input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#venta-form select:focus,
+#venta-form input:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+#venta-form button {
+  grid-column: span 2;
+  padding: 0.8rem;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#venta-form button:hover {
+  background-color: #4338ca;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table th {
+  background-color: #eef2ff;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+@media (max-width: 640px) {
+  .ventas-container {
+    margin-left: 0; /* Remove left margin on small screens */
+    width: 100%; /* Ensure that it occupies all available width */
+  }
+
+  #venta-form {
+    grid-template-columns: 1fr;
+  }
+
+  #venta-form button {
+    grid-column: span 1;
+  }
+}
+
+.btn-eliminar-venta {
+  background-color: #e3342f;
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.btn-eliminar-venta:hover {
+  background-color: #cc1f1a;
+}
+
+/* DARK MODE */
+body.dark-theme .ventas-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .ventas-container h2,
+body.dark-theme .ventas-container h3 {
+  color: #e0e0e0;
+}
+
+body.dark-theme #venta-form select,
+body.dark-theme #venta-form input {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #eee;
+}
+
+body.dark-theme #venta-form select:focus,
+body.dark-theme #venta-form input:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+body.dark-theme #venta-form button {
+  background-color: #1976d2;
+}
+
+body.dark-theme #venta-form button:hover {
+  background-color: #115293;
+}
+
+body.dark-theme table {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark-theme table th {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+body.dark-theme table tbody tr:hover {
+  background-color: #2e3b55;
+}
+
+body.dark-theme .btn-eliminar-venta {
+  background-color: #ef5350;
+}
+
+body.dark-theme .btn-eliminar-venta:hover {
+  background-color: #c62828;
+}
