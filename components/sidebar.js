@@ -11,7 +11,6 @@ export function renderSidebar() {
         <li><a href="#/clientes" data-key="clientes">👥 Clientes</a></li>
         <li><a href="#/proveedores" data-key="proveedores">🏭 Proveedores</a></li>
         <li><a href="#/ventas" data-key="ventas">🧾 Ventas</a></li>
-        <li><a href="#" id="logout-btn" data-key="logout">🔒 Cerrar sesión</a></li>
       </ul>
     </div>
   `;
@@ -24,16 +23,14 @@ export function cargarIdiomaSidebar(idioma) {
       productos: '📦 Productos',
       clientes: '👥 Clientes',
       proveedores: '🏭 Proveedores',
-      ventas: '🧾 Ventas',
-      logout: '🔒 Cerrar sesión'
+      ventas: '🧾 Ventas'
     },
     en: {
       dashboard: '📊 Dashboard',
       productos: '📦 Products',
       clientes: '👥 Clients',
       proveedores: '🏭 Suppliers',
-      ventas: '🧾 Sales',
-      logout: '🔒 Logout'
+      ventas: '🧾 Sales'
     }
   };
 
@@ -48,11 +45,4 @@ export function cargarIdiomaSidebar(idioma) {
 
 document.addEventListener('idioma-cambiado', (event) => {
   cargarIdiomaSidebar(event.detail);
-});
-
-document.addEventListener('click', (e) => {
-  if (e.target && e.target.id === 'logout-btn') {
-    localStorage.removeItem('user');
-    location.hash = '#/login';
-  }
 });
