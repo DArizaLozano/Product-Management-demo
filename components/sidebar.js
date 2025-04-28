@@ -3,8 +3,10 @@ export function renderSidebar() {
   const darkClass = settings.temaOscuro ? 'dark' : '';
   const idioma = settings.idioma || 'es';
 
-  return `
-    <div class="sidebar ${darkClass}">
+  const sidebar = `
+    <input type="checkbox" id="sidebarToggle" class="sidebar-toggle-checkbox" />
+    <div id="sidebar" class="sidebar ${darkClass}">
+    <label for="sidebarToggle" class="sidebar-toggle-btn">☰</label>
       <ul>
         <li><a href="#/dashboard" data-key="dashboard">📊 Dashboard</a></li>
         <li><a href="#/productos" data-key="productos">📦 Productos</a></li>
@@ -13,7 +15,12 @@ export function renderSidebar() {
         <li><a href="#/ventas" data-key="ventas">🧾 Ventas</a></li>
       </ul>
     </div>
+    
   `;
+
+  document.body.insertAdjacentHTML('beforeend', sidebar);
+
+  cargarIdiomaSidebar(idioma);
 }
 
 export function cargarIdiomaSidebar(idioma) {

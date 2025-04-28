@@ -232,3 +232,56 @@ body.dark {
   background-color: #355d36;
   color: #c9ffc4;
 }
+
+/* Adaptaciones para móviles */
+@media (max-width: 768px) {
+  .productos-container {
+    margin-left: 0;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  #btn-add-product {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  #form-product-container {
+    padding: 0.8rem;
+  }
+
+  #form-product-container form input {
+    padding: 0.5rem;
+  }
+
+  #form-product-container form button {
+    padding: 0.5rem 1rem;
+  }
+
+  #products-table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  #products-table th,
+  #products-table td {
+    padding: 0.6rem;
+  }
+
+  .categoria-select,
+  .precio-promedio-container {
+    font-size: 0.9rem;
+  }
+
+  .titulo-precio-promedio {
+    font-size: 1.2rem;
+  }
+  .btn-edit,
+  .btn-delete {
+    padding: 0.5rem 1rem;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+}
+
+

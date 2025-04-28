@@ -1,7 +1,7 @@
 .sidebar {
   position: fixed;
   top: 60px;
-  left: 0;
+  left: -250px; /* Oculto por defecto */
   height: calc(100vh - 60px);
   width: 250px;
   background: linear-gradient(180deg, #1f2937, #111827);
@@ -12,6 +12,7 @@
   box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
   border-right: 1px solid #374151;
   z-index: 9998;
+  transition: left 0.3s ease; /* Transición suave */
 }
 
 .sidebar.dark {
@@ -47,10 +48,6 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.sidebar.dark li a {
-  color: #d1d5db;
-}
-
 .sidebar li a:hover {
   background-color: #2563eb;
   color: white;
@@ -68,17 +65,58 @@
   outline-offset: 2px;
 }
 
-
-
-.sidebar.dark {
-  background: linear-gradient(180deg, #0e1117, #05080c);
-  color: #e5e7eb;
-  border-right: 1px solid #1f2937;
-  box-shadow: 6px 0 15px rgba(0, 0, 0, 0.4);
+/* El checkbox que actúa como toggle */
+.sidebar-toggle-checkbox {
+  display: none; /* No queremos que se vea el checkbox */
 }
 
-.sidebar.dark li a {
-  color: #d1d5db;
+/* El botón del toggle que actuará como el control para abrir y cerrar el sidebar */
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 105px;
+  left: 1px;
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 9999;
 }
 
+/* Cuando el checkbox está marcado, movemos el sidebar hacia la izquierda */
+.sidebar-toggle-checkbox:checked + .sidebar {
+  left: 0; /* Sidebar visible cuando el checkbox está marcado */
+}
 
+/* Cuando el checkbox está marcado, movemos el botón también para que se ajuste */
+.sidebar-toggle-checkbox:checked + .sidebar + .sidebar-toggle-btn {
+  left: 270px; /* Botón desplazado cuando el sidebar está abierto */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    left: -250px; /* Oculto por defecto */
+  }
+
+  /* Solo mostrar el sidebar en móviles cuando el checkbox está marcado */
+  .sidebar-toggle-btn {
+    display: block; /* Aseguramos que el botón de toggle se muestra solo en móviles */
+  }
+
+  .sidebar-toggle-checkbox:checked + .sidebar {
+    left: 0; /* Sidebar visible cuando el checkbox está marcado */
+  }
+}
+
+@media (min-width: 769px) {
+  /* En pantallas grandes, el botón de toggle no se muestra */
+  .sidebar-toggle-btn {
+    display: none;
+  }
+
+  /* En pantallas grandes, el sidebar está siempre visible */
+  .sidebar {
+    left: 0;
+  }
+}

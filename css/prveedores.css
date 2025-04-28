@@ -185,3 +185,47 @@ body.dark-theme .btn-edit:hover {
 body.dark-theme .btn-delete:hover {
   background-color: #c62828;
 }
+
+@media (max-width: 768px) {
+  .proveedores-container {
+    margin-left: 0;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  #btn-add-proveedor {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  #form-proveedor-container {
+    padding: 0.8rem;
+  }
+
+  #form-proveedor-container form input {
+    padding: 0.5rem;
+  }
+
+  #form-proveedor-container form button {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+
+  #proveedores-table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  #proveedores-table th,
+  #proveedores-table td {
+    padding: 0.6rem;
+    word-break: break-word;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 0.5rem 1rem;
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+}

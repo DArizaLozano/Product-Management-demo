@@ -190,3 +190,47 @@ body.dark-theme .btn-edit-cliente:hover {
 body.dark-theme .btn-delete-cliente:hover {
   background-color: #c62828;
 }
+/* Adaptaciones para móviles */
+@media (max-width: 768px) {
+  .clientes-container {
+    margin-left: 0;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  #btn-add-cliente {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  #form-cliente-container {
+    padding: 0.8rem;
+  }
+
+  #form-cliente-container form input {
+    padding: 0.5rem;
+  }
+
+  #form-cliente-container form button {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+
+  #clientes-table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  #clientes-table th,
+  #clientes-table td {
+    padding: 0.6rem;
+    word-break: break-word;
+  }
+
+  .btn-edit-cliente,
+  .btn-delete-cliente {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+}
